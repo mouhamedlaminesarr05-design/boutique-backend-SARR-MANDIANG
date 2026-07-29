@@ -33,7 +33,7 @@
                             <option value="">-- Choisir un produit --</option>
                             @foreach ($produits as $produit)
                                 <option value="{{ $produit->id }}" {{ old('produit_id') == $produit->id ? 'selected' : '' }}>
-                                    {{ $produit->nom }} ({{ number_format($produit->prix, 2) }} €)
+                                    {{ $produit->nom }} ({{ number_format($produit->prix, 0, ',', ' ') }} FCFA)
                                 </option>
                             @endforeach
                         </select>

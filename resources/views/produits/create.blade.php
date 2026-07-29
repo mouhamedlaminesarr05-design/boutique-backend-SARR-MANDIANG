@@ -32,8 +32,8 @@
                     </div>
 
                     <div class="mb-4">
-                        <x-input-label for="prix" value="Prix (€)" />
-                        <x-text-input id="prix" name="prix" type="number" step="0.01" min="0" class="block mt-1 w-full" value="{{ old('prix') }}" required />
+                        <x-input-label for="prix" value="Prix (FCFA)" />
+                        <x-text-input id="prix" name="prix" type="number" step="1" min="0" class="block mt-1 w-full" value="{{ old('prix') }}" required />
                         <x-input-error :messages="$errors->get('prix')" class="mt-2" />
                     </div>
 

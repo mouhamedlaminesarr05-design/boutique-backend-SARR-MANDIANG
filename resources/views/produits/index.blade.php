@@ -39,7 +39,7 @@
                             <tr>
                                 <td class="px-6 py-4">{{ $produit->nom }}</td>
                                 <td class="px-6 py-4">{{ $produit->categorie->nom }}</td>
-                                <td class="px-6 py-4">{{ number_format($produit->prix, 2) }} €</td>
+                                <td class="px-6 py-4">{{ number_format($produit->prix, 0, ',', ' ') }} FCFA</td>
                                 <td class="px-6 py-4">{{ $produit->stock }}</td>
                                 <td class="px-6 py-4 text-right space-x-2">
                                     <a href="{{ route('produits.show', $produit) }}" class="text-indigo-600 hover:underline">Voir</a>

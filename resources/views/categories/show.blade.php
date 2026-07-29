@@ -25,7 +25,7 @@
                         @forelse ($categorie->produits as $produit)
                             <tr>
                                 <td class="px-6 py-4">{{ $produit->nom }}</td>
-                                <td class="px-6 py-4">{{ number_format($produit->prix, 2) }} €</td>
+                                <td class="px-6 py-4">{{ number_format($produit->prix, 0, ',', ' ') }} FCFA</td>
                                 <td class="px-6 py-4">{{ $produit->stock }}</td>
                             </tr>
                         @empty

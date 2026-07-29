@@ -9,7 +9,7 @@
         <div class="max-w-4xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white shadow rounded-lg p-6 mb-6">
                 <p><strong>Catégorie :</strong> {{ $produit->categorie->nom }}</p>
-                <p><strong>Prix :</strong> {{ number_format($produit->prix, 2) }} €</p>
+                <p><strong>Prix :</strong> {{ number_format($produit->prix, 0, ',', ' ') }} FCFA</p>
                 <p><strong>Stock :</strong> {{ $produit->stock }}</p>
                 <p class="mt-2">{{ $produit->description ?? 'Aucune description.' }}</p>
             </div>
