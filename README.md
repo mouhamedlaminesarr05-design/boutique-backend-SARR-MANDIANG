@@ -14,7 +14,7 @@ Projet réalisé dans le cadre de l'examen **CCP 2026 — Gestion de boutique**.
 - Laravel 12
 - PHP 8.3
 - MySQL
-- Blade + Tailwind CSS (Laravel Breeze)
+- Blade + Tailwind CSS
 - Laravel Sanctum (authentification API par token)
 - L5-Swagger (documentation API)
 
@@ -27,23 +27,7 @@ Projet réalisé dans le cadre de l'examen **CCP 2026 — Gestion de boutique**.
 - Catalogue produits consultable sans connexion (lecture seule)
 - API REST complète (`/api`), sécurisée par token (Sanctum)
 - Documentation interactive Swagger
-
-## Rôles et permissions
-
-| Fonctionnalité | Non connecté | Employé | Gestionnaire | Admin |
-|---|---|---|---|---|
-| Consulter la page d'accueil | ✅ | ✅ | ✅ | ✅ |
-| Consulter le catalogue produits | ✅ | ✅ | ✅ | ✅ |
-| Consulter les catégories | ❌ | ✅ | ✅ | ✅ |
-| Consulter les acheteurs | ❌ | ✅ | ✅ | ✅ |
-| Enregistrer un achat | ❌ | ✅ | ✅ | ✅ |
-| Créer / modifier / supprimer une catégorie | ❌ | ❌ | ✅ | ✅ |
-| Créer / modifier / supprimer un produit | ❌ | ❌ | ✅ | ✅ |
-| Créer / modifier / supprimer un acheteur | ❌ | ❌ | ✅ | ✅ |
-| Gérer les utilisateurs et leurs rôles | ❌ | ❌ | ❌ | ✅ |
-
-## Installation
-
+- 
 ### Prérequis
 
 - PHP >= 8.2, Composer
