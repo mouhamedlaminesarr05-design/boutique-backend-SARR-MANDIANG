@@ -1,4 +1,4 @@
-# Boutique — Backend (Laravel)
+# Boutique — Backend (Laravel):
 
 Backend de l'application de gestion de boutique : administration des catégories, produits et acheteurs, avec gestion des rôles et une API REST documentée via Swagger.
 
